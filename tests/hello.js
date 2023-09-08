@@ -14,9 +14,9 @@ WebAssembly.instantiate(code, {
                         const [offset, limit] = new Uint32Array(wasm_memory.buffer, iov, 2);
 
                         console.log(new Uint8Array(wasm_memory.buffer, offset, limit));
-                        //Uint8Array(12)
-                        //[ 72, 101, 108, 108, 111, 32,  87, 111, 114, 108, 100,  33];
-                        //  H    e    l    l     o       W     o    r   l    d     !
+                        //Uint8Array(13)
+                        //[ 72, 101, 108, 108, 111, 32,  87, 111, 114, 108, 100,  33, 10];
+                        //  H    e    l    l     o       W     o    r   l    d     !  \n
 
                         const STD_OUT = 1;
                         fs.writeSync(STD_OUT, new Uint8Array(wasm_memory.buffer, offset, limit));
