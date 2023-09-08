@@ -6,6 +6,12 @@
       "sourceMap": true,
       "debug": true
     },
+    "hello": {
+      "outFile": "build/hello.wasm",
+      "textFile": "build/hello.wat",
+      "sourceMap": true,
+      "debug": true
+    },
     "release": {
       "outFile": "build/release.wasm",
       "textFile": "build/release.wat",
