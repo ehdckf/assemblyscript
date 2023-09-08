@@ -39,6 +39,4 @@ WebAssembly.instantiate(code, {
         // wasm_memory 가 momory 를 참조하도록함.
 
         hello();
-        console.log(); // 이걸 안해주면 console 에 출력이 안됨..
-        // 이거는 일단 나중에
 });
