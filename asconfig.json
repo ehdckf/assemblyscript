@@ -12,6 +12,12 @@
       "sourceMap": true,
       "debug": true
     },
+    "stdio": {
+      "outFile": "build/stdio.wasm",
+      "textFile": "build/stdio.wat",
+      "sourceMap": true,
+      "debug": true
+    },
     "release": {
       "outFile": "build/release.wasm",
       "textFile": "build/release.wat",

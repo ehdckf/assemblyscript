@@ -14,11 +14,6 @@ export function hello(): void {
         store<u32>(iov, s_utf8_len, sizeof<usize>());
         // iov 다음 포인터? *(iov + 1) 에는 text 길이를 저장
 
-        let lf = memory.data(8);
-        store<u8>(lf, 10);
-        store<u32>(iov, lf, sizeof<usize>() * 2);
-        store<u32>(iov, 1, sizeof<usize>() * 3);
-
         // iov 는 포인터의 포인터
         fd_stdout(iov);
 }
