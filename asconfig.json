@@ -12,6 +12,12 @@
       "sourceMap": true,
       "debug": true
     },
+    "countingSort": {
+      "outFile": "build/countingSort.wasm",
+      "textFile": "build/countingSort.wat",
+      "sourceMap": true,
+      "debug": true
+    },
     "stdio": {
       "outFile": "build/stdio.wasm",
       "textFile": "build/stdio.wat",

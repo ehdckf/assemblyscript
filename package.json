@@ -10,7 +10,11 @@
     "asbuild": "npm run asbuild:debug && npm run asbuild:release",
     "start": "npx serve .",
     "build:hello": "asc assembly/hello.ts --target hello ",
-    "test:hello": "node tests/hello.js"
+    "test:hello": "node tests/hello.js",
+    "build:stdio": "asc assembly/stdio.ts --target stdio ",
+    "test:stdio": "node tests/stdio.js",
+    "start:stdio": "asc assembly/stdio.ts --target stdio  && node tests/stdio.js",
+    "start:countingSort": "asc assembly/countingSort.ts --target countingSort  && node tests/countingSort.js"
   },
   "author": "",
   "license": "ISC",
