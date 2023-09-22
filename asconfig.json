@@ -12,6 +12,12 @@
       "sourceMap": true,
       "debug": true
     },
+    "add": {
+      "outFile": "build/add.wasm",
+      "textFile": "build/add.wat",
+      "sourceMap": true,
+      "debug": true
+    },
     "countingSort": {
       "outFile": "build/countingSort.wasm",
       "textFile": "build/countingSort.wat",
@@ -21,6 +27,12 @@
     "stdio": {
       "outFile": "build/stdio.wasm",
       "textFile": "build/stdio.wat",
+      "sourceMap": true,
+      "debug": true
+    },
+    "sweetcorn": {
+      "outFile": "build/sweetcorn.wasm",
+      "textFile": "build/sweetcorn.wat",
       "sourceMap": true,
       "debug": true
     },

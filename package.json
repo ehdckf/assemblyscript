@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node tests",
+    "trans": "node ./code2base64.js",
     "asbuild:debug": "asc assembly/index.ts --target debug",
     "asbuild:release": "asc assembly/index.ts --target release",
     "asbuild": "npm run asbuild:debug && npm run asbuild:release",
@@ -14,7 +15,9 @@
     "build:stdio": "asc assembly/stdio.ts --target stdio ",
     "test:stdio": "node tests/stdio.js",
     "start:stdio": "asc assembly/stdio.ts --target stdio  && node tests/stdio.js",
-    "start:countingSort": "asc assembly/countingSort.ts --target countingSort  && node tests/countingSort.js"
+    "start:countingSort": "asc assembly/countingSort.ts --target countingSort  && node tests/countingSort.js",
+    "start:add": "asc assembly/add.ts --target add  && node tests/add.js",
+    "start:sweetcorn": "asc assembly/sweetcorn.ts --target sweetcorn  && node tests/sweetcorn.js"
   },
   "author": "",
   "license": "ISC",
